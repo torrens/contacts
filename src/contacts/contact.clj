@@ -30,7 +30,7 @@
 
 (defn find-contact-by-id
   [contact-id]
-  (find-one-as-map doc {:_id (ObjectId. contact-id)}))
+  (find-by-id doc contact-id))
 
 (defn find-contact-by-last-name
   [last-name]
@@ -62,7 +62,6 @@
 
 (defn delete-contact
   [contact-id]
-  (println contact-id)
   (remove-by-id doc contact-id))
 
 ;; Drop Collection
