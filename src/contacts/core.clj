@@ -1,6 +1,12 @@
-(ns contacts.core)
+(ns contacts.core
+  (:use [contacts.contact]))
 
-(defn -main
-  "I don't do a whole lot."
-  [& args]
-  (println "Hello, World!"))
+
+
+
+
+
+
+
+
+

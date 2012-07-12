@@ -1,0 +1,5 @@
+/.DS_Store
+/resources/log4j.properties
+/src/.DS_Store
+/src/contacts/.DS_Store
+/target/stale/dependencies
