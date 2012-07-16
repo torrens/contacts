@@ -1,9 +1,10 @@
 (ns contacts.contact
   (:use [monger.core :only [connect! set-db! get-db]]
-        [monger.collection :only [insert insert-and-return find-one-as-map find-maps find-and-modify update remove-by-id drop]]
+        [monger.collection :only [insert insert-and-return find-by-id find-one-as-map find-maps find-and-modify update remove-by-id drop]]
         [monger.operators]
         [contacts.counter])
-  (:import [org.bson.types ObjectId]))
+  (:import [org.bson.types ObjectId])
+  (:refer-clojure :exclude [drop]))
 
 ;; Connect to database
 (connect!)
